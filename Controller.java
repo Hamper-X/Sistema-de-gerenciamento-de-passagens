@@ -6,6 +6,7 @@ class Controller {
     
     private ArrayList<Viagem>viagens;   // Contem lista de todas as viagens correntes 
     private Scanner keyboard = new Scanner(System.in);
+    
 
     
     public Controller(){
@@ -34,6 +35,7 @@ class Controller {
     }
 
     private void ReservarPassagem(){
+        
         System.out.println(" Escolha qual viagem deseja reservar uma passagem:");
         int count = 0;
         for (Viagem viagem : viagens) {
@@ -41,9 +43,12 @@ class Controller {
             count++;
         }
 
-        String op = keyboard.nextLine();
+        int op = keyboard.nextInt();
+        count =0;
         for (Viagem viagem : viagens) {
-            if(viagem.)    
+            if( count == op){
+                viagem.mostrarLugares();
+            }
         }
         // 2- escolher viagem e mostrar assentos possiveis 
     }
