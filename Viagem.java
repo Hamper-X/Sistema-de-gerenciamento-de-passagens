@@ -22,7 +22,9 @@ class Viagem {
     public void setLugaresDisponiveis(char[][] lugaresDisponiveis) { this.lugaresDisponiveis = lugaresDisponiveis; }
     public void setPassagensDisponiveis(ArrayList<Passagem> passagensDisponiveis) { this.passagensDisponiveis = passagensDisponiveis; }   
     
+    // Colocar letra na frente de cada linha 
     public void mostrarLugares(){
+
         for(int i = 0; i< 4; i++){
             for(int j=0; j<12; j++){
                 System.out.println(" [ "+lugaresDisponiveis[i][j]+" ] ");
@@ -30,3 +32,6 @@ class Viagem {
         }
     }
 }
+
+
+
